@@ -48,11 +48,11 @@ class ContactsController extends Controller
                     $message->from($request->email);
                     $message->to('ibtihal@nadsoft.net', 'Admin')->subject($request->get('subject'));
                 });*/
-                $user_id = $contact->id; // this give us the last inserted record id
+                $contact_id = $contact->id; // this give us the last inserted record id
                 return response()->json([
                     'status'=>"success",
                     'message' => 'Thank you, your details have been successfully registered.',
-                    'user_id'=>$user_id
+                    'contact_id'=>$contact_id
                 ]);
             }else{
                 $first = null;
@@ -72,7 +72,7 @@ class ContactsController extends Controller
     // We are submitting are image along with userid and with the help of user id we are updateing our record
     public function storeFiles(Request $request)
     {
-        $userid = $request->userid;
+        $contact_id = $request->contact_id;
         if($request->file('file')){
             foreach ($request->file as $img) {
 
@@ -86,12 +86,12 @@ class ContactsController extends Controller
                 File::create([
                     'file'  => '/contacts/'.$imageName,
                     'name'   =>$original_name,
-                    'contact_id'    =>$userid
+                    'contact_id'    =>$contact_id
                 ]);
             }
             return response()->json([
                 'status'    =>"success",
-                'userid'    =>$userid
+                'contact_id'    =>$contact_id
             ]);
         }else{
             return response()->json([

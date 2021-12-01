@@ -69,7 +69,7 @@
     </div>
     <form action="{{ route('form.data') }}" name="demoform" id="demoform" method="POST" class="dropzone row pt-5" enctype="multipart/form-data">
         @csrf
-        <input type="hidden" class="userid" name="userid" id="userid" value="">
+        <input type="hidden" class="contact_id" name="contact_id" id="contact_id" value="">
 
         <div class="col-lg-3">
             <label for="firstName" class="text-bold label-new" id="fname-label">Reporter Name <span class="text-success">*</span></label>
@@ -281,8 +281,8 @@
                             }
                             if(result.status == "success"){
                                 // fetch the useid
-                                var userid = result.user_id;
-                                $("#userid").val(userid); // inseting userid into hidden input field
+                                var contact_id = result.contact_id;
+                                $("#contact_id").val(contact_id); // inseting userid into hidden input field
                                 //process the queue
                                 $('#top').css('display','block');
                                 $('html, body').animate({
@@ -300,8 +300,8 @@
                 //Gets triggered when we submit the image.
                 this.on('sending', function(file, xhr, formData){
                     //fetch the user id from hidden input field and send that userid with our image
-                    let userid = document.getElementById('userid').value;
-                    formData.append('userid', userid);
+                    let contact_id = document.getElementById('contact_id').value;
+                    formData.append('contact_id', contact_id);
                 });
 
                 this.on("success", function (file, response) {
