@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="207.048" height="64.469" viewBox="0 0 207.048 64.469">
+  <g id="Group_1809" data-name="Group 1809" transform="translate(-165.283 260.567)">
+    <rect id="Rectangle_347" data-name="Rectangle 347" width="21.252" height="6.838" transform="translate(199.518 -231.57)" fill="#46ba81"/>
+    <g id="Group_1808" data-name="Group 1808" transform="translate(228.613 -260.567)">
+      <path id="Path_10685" data-name="Path 10685" d="M341.391-232.092a10.775,10.775,0,0,1-10.763-10.74,10.8,10.8,0,0,1,10.763-10.807,10.827,10.827,0,0,1,10.8,10.807,10.8,10.8,0,0,1-10.8,10.74m0,6.923a17.729,17.729,0,0,0,17.727-17.62,17.779,17.779,0,0,0-17.7-17.749,17.761,17.761,0,0,0-17.685,17.749,17.7,17.7,0,0,0,17.663,17.62" transform="translate(-267.472 260.56)" fill="#46ba81"/>
+      <path id="Path_10686" data-name="Path 10686" d="M300.356-225.155c7.28,0,12.345-3.946,12.345-10.15,0-5.236-3.544-8.105-9.179-10.764-3.9-1.836-6.479-2.532-6.479-4.559,0-1.752,1.9-3.227,4.452-3.227a5.251,5.251,0,0,1,4.876,2.848l5.042-3.525c-1.54-4.115-5.38-6.035-10.023-6.035-6.249,0-11.228,3.884-11.228,9.77,0,5.424,4.2,7.514,8.021,9.413,3.567,1.773,7.64,3.735,7.64,6.225,0,1.816-2.152,3.123-5.36,3.123a7.188,7.188,0,0,1-6.607-3.5l-5.464,3.839c2.279,4.221,6.394,6.543,11.965,6.543" transform="translate(-258.806 260.567)" fill="#46ba81"/>
+      <path id="Path_10687" data-name="Path 10687" d="M259.131-231.519h-3.123v-20.428h3.059c6.734,0,10.826,3.884,10.826,10.256,0,6.332-4.073,10.172-10.762,10.172m-.042-27.2-9.9.022v34h9.9c11,0,17.7-6.415,17.7-16.966,0-10.616-6.71-17.075-17.7-17.052" transform="translate(-249.192 260.114)" fill="#1f1c51"/>
+    </g>
+    <path id="Path_10688" data-name="Path 10688" d="M185.776-259.291v19.057l-20.153-19.6h-.34v34.693h6.838V-244.2l20.2,19.649h.315v-34.737Z" transform="translate(0 -0.179)" fill="#1f1c51"/>
+    <path id="Path_10689" data-name="Path 10689" d="M396.605-252.911v-6.816H376.093v34.145h6.838v-13.654h11.732v-6.816H382.931v-6.858Z" transform="translate(-51.701 -0.206)" fill="#46ba81"/>
+    <path id="Path_10690" data-name="Path 10690" d="M431.944-259.616H408.351v6.774h8.379V-225.6h6.858v-27.244h8.356Z" transform="translate(-59.613 -0.233)" fill="#46ba81"/>
+    <path id="Path_10691" data-name="Path 10691" d="M228.839-224.417,220.1-244.171l-8.716,19.754h-7.24L220-259.281h.253l15.912,34.864Z" transform="translate(-9.531 -0.315)" fill="#1f1c51"/>
+    <text id="Software_" data-name="Software " transform="translate(165.362 -203.098)" fill="#1f1c51" font-size="12" font-family="AJannatLT, A Jannat LT"><tspan x="0" y="0" letter-spacing="-0.009em">S</tspan><tspan y="0">oftware </tspan></text>
+    <text id="_" data-name="&gt;" transform="translate(224.979 -203.551)" fill="#46ba81" font-size="9" font-family="'\32 9LTBukra-Bold', '\32 9LT Bukra'" font-weight="700"><tspan x="0" y="0">&gt;</tspan></text>
+    <text id="_Internet_" data-name=" Internet " transform="translate(233.13 -203.098)" fill="#1f1c51" font-size="12" font-family="AJannatLT, A Jannat LT"><tspan x="0" y="0" xml:space="preserve"> In</tspan><tspan y="0" letter-spacing="-0.019em">t</tspan><tspan y="0">ernet </tspan></text>
+    <text id="_2" data-name="&gt;" transform="translate(290.478 -203.551)" fill="#46ba81" font-size="9" font-family="'\32 9LTBukra-Bold', '\32 9LT Bukra'" font-weight="700"><tspan x="0" y="0">&gt;</tspan></text>
+    <text id="_Technology" data-name=" Technology" transform="translate(298.629 -203.098)" fill="#1f1c51" font-size="12" font-family="AJannatLT, A Jannat LT"><tspan x="0" y="0"> </tspan><tspan y="0" letter-spacing="-0.099em">T</tspan><tspan y="0" letter-spacing="0.019em">e</tspan><tspan y="0">chnol</tspan><tspan y="0" letter-spacing="0.03em">o</tspan><tspan y="0">gy</tspan></text>
+  </g>
+</svg>

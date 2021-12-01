@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="271.324" height="97.612" viewBox="0 0 271.324 97.612">
+  <g id="Group_1766" data-name="Group 1766" transform="translate(-153.038 -685)">
+    <g id="Group_1764" data-name="Group 1764" transform="translate(-24.962 -47.063)">
+      <g id="Rectangle" transform="translate(178 767.5)" fill="none" stroke="#a5a5a5" stroke-width="1" opacity="0.584">
+        <rect width="271.324" height="62.176" rx="8" stroke="none"/>
+        <rect x="0.5" y="0.5" width="270.324" height="61.176" rx="7.5" fill="none"/>
+      </g>
+    </g>
+    <text id="Reporter_name_" data-name="Reporter name
+" transform="translate(153.038 698)" fill="#25265b" font-size="16" font-family="'\32 9LTBukra-Bold', '\32 9LT Bukra'" font-weight="700"><tspan x="0" y="0">Reporter Name</tspan><tspan x="0" y="34.8"></tspan></text>
+    <text id="_" data-name="*" transform="translate(293.038 702)" fill="#76b984" font-size="18" font-family="'\32 9LTBukra-Bold', '\32 9LT Bukra'" font-weight="700"><tspan x="0" y="0">*</tspan></text>
+  </g>
+</svg>
