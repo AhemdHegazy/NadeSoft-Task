@@ -59,6 +59,14 @@
             <h2 class="text-center please pt-5">Please fill the form below:</h2>
         </div>
     </div>
+    <div id="top2" style="display: none">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong> Sending ... </strong> please wait.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
     <div id="top" style="display: none">
         <div class="alert alert-success alert-dismissible fade show" role="alert">
             <strong> Thank you, </strong>your details have been successfully registered.
@@ -284,12 +292,11 @@
                                 var contact_id = result.contact_id;
                                 $("#contact_id").val(contact_id); // inseting userid into hidden input field
                                 //process the queue
-                                $('#top').css('display','block');
+                                myDropzone.processQueue();
+                                $('#top2').css('display','block');
                                 $('html, body').animate({
                                     scrollTop: $("#topbar").offset().top
                                 }, 1500);
-                                myDropzone.processQueue();
-
                             }else{
                                 console.log("error");
                             }
@@ -302,13 +309,19 @@
                     //fetch the user id from hidden input field and send that userid with our image
                     let contact_id = document.getElementById('contact_id').value;
                     formData.append('contact_id', contact_id);
-                });
-
-                this.on("success", function (file, response) {
                     //reset the form
                     $('#demoform')[0].reset();
                     //reset dropzone
                     $('.dropzone-previews').empty();
+                });
+
+                this.on("success", function (file, response) {
+
+                    $('#top2').css('display','none');
+                    $('#top').css('display','block');
+                    $('html, body').animate({
+                        scrollTop: $("#topbar").offset().top
+                    }, 1500);
                 });
 
                 this.on("queuecomplete", function () {

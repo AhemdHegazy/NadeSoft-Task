@@ -32,22 +32,6 @@ class ContactsController extends Controller
             if ($validator->passes()) {
                 //  Store data in database
                 $contact = Contact::create($request->all());
-/*
-                //  Send mail to admin
-                \Mail::send('mail', array(
-                    'fname' => $request->get('fname'),
-                    'lname' => $request->get('lname'),
-                    'email' => $request->get('email'),
-                    'phone' => $request->get('phone'),
-                    'project' => $request->get('project'),
-                    'classification' => $request->get('classification'),
-                    'issue' => $request->get('issue'),
-                    'description' => $request->get('description'),
-                    'priority' => $request->get('priority'),
-                ), function($message) use ($request){
-                    $message->from($request->email);
-                    $message->to('ibtihal@nadsoft.net', 'Admin')->subject($request->get('subject'));
-                });*/
                 $contact_id = $contact->id; // this give us the last inserted record id
                 return response()->json([
                     'status'=>"success",
@@ -89,6 +73,30 @@ class ContactsController extends Controller
                     'contact_id'    =>$contact_id
                 ]);
             }
+            set_time_limit(6000);
+            $contact = Contact::find($contact_id);
+            $files = File::where('contact_id',$contact_id)->get();
+            //  Send mail to admin
+            \Mail::send('mail', array(
+
+                'fname' => $contact->fname,
+                'lname' => $contact->lname,
+                'email' => $contact->email,
+                'phone' => $contact->phone,
+                'project' => $contact->project,
+                'classification' => $contact->classification,
+                'issue' => $contact->issue,
+                'description' => $contact->description,
+                'priority' => $contact->priority,
+
+            ), function($message) use ($contact,$files){
+                $message->from($contact->email);
+                //ibtihal@nadsoft.net
+                $message->to('ahmedhegazi214@gmail.com', 'Admin')->subject($contact->issue);
+                /*foreach ($files as $file){
+                    $message->attach(public_path($file->file));
+                }*/
+            });
             return response()->json([
                 'status'    =>"success",
                 'contact_id'    =>$contact_id
